@@ -15,6 +15,18 @@ function App() {
     //will only run once when the app component loads...
     auth.onAuthStateChanged((authUser) => {
       console.log("the user is : ", authUser);
+
+      if (authUser) {
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
     });
   }, []);
   return (

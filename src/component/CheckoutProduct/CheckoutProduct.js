@@ -1,6 +1,7 @@
 import React from "react";
-import "./CheckoutProduct";
+import "./CheckoutProduct.css";
 import { useStateValue } from "../../StateProvider";
+import GradeIcon from "@material-ui/icons/Grade";
 
 function CheckoutProduct({ id, image, title, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -25,7 +26,9 @@ function CheckoutProduct({ id, image, title, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <p>
+                <GradeIcon style={{ color: "orange" }} />
+              </p>
             ))}
         </div>
         <button onClick={removeFromBasket}>Remove from Basket</button>

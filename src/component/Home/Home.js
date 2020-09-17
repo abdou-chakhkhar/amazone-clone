@@ -17,7 +17,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg"
           alt=""
         />
 
@@ -35,6 +35,29 @@ function Home() {
             price={239.0}
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+          />
+          <Product
+            id="49536455094"
+            title="Diapers Size 4, 150 Count - Pampers Swaddlers Disposable Baby Diapers, ONE MONTH SUPPLY"
+            price={239.0}
+            rating={4}
+            image="https://m.media-amazon.com/images/I/61tKaFdMZxL._AC_UL320_.jpg"
+          />
+          <Product
+            id="9936455094"
+            title="Blink XT2 Outdoor/Indoor Smart Security Camera with cloud storage included, 2-way audio, 2-year battery life – Add-on camera for existing Blink customers"
+            price={239.0}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/31xMnoF6p0L._AC_US218_.jpg"
+          />
+        </div>
+        <div className="home__row">
+          <Product
+            id="90829332"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+            price={1094.98}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
           />
         </div>
         <div className="home__row">
@@ -58,17 +81,6 @@ function Home() {
             price={598.99}
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
-          />
-          />
-        </div>
-        <div className="home__row">
-          <Product
-            id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
-          />
           />
         </div>
       </div>
