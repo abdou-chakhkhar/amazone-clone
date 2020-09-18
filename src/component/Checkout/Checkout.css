@@ -15,3 +15,9 @@
   padding: 10px;
   border-bottom: 1px solid lightgray;
 }
+
+.checkProducts {
+  background-color: white;
+  width: 96%;
+  margin: 0 auto;
+}
