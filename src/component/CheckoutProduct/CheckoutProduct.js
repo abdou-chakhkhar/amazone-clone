@@ -3,7 +3,7 @@ import "./CheckoutProduct.css";
 import { useStateValue } from "../../StateProvider";
 import GradeIcon from "@material-ui/icons/Grade";
 
-function CheckoutProduct({ id, image, title, price, rating }) {
+function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
