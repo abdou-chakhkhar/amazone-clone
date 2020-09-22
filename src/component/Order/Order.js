@@ -15,9 +15,11 @@ function Order({ order }) {
       {order.data.basket?.map((item) => (
         <CheckoutProduct
           id={item.id}
-          title={item.image}
+          key={item.id}
+          title={item.title}
           price={item.price}
           rating={item.rating}
+          image={item.image}
           hideButton
         />
       ))}

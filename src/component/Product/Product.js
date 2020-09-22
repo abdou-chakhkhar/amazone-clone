@@ -2,13 +2,18 @@ import React from "react";
 import "./Product.css";
 import GradeIcon from "@material-ui/icons/Grade";
 import { useStateValue } from "../../StateProvider";
+import { useHistory } from "react-router-dom";
+import { Link } from "@material-ui/core";
 
 function Product({ id, title, image, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
+  const history = useHistory();
   console.log("this is ", basket);
 
   const addToBasket = () => {
-    // dispatch the item into the data layer
+    if (!user) {
+      return history.push("/login");
+    }
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
@@ -33,7 +38,7 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>
+              <p key={i}>
                 <GradeIcon style={{ color: "orange" }} />
               </p>
             ))}

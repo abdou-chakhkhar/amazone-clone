@@ -10,10 +10,14 @@ function Header() {
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
+      dispatch({
+        type: "EMPTY_BASKET",
+      });
     }
   };
 
   console.log(user);
+
   return (
     <div className="header">
       <Link to="/">
@@ -30,6 +34,7 @@ function Header() {
       </div>
 
       <div className="header__nav">
+        {/* {!user && "/login"} */}
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header__option">
             <span className="header__optionLineOne">

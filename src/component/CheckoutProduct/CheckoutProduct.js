@@ -26,7 +26,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>
+              <p key={i}>
                 <GradeIcon style={{ color: "orange" }} />
               </p>
             ))}
